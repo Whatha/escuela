@@ -1,0 +1,18 @@
+/* Code that does the work */
+
+/*
+div:hover{
+  z-index: 1;
+
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+div:hover:after {
+    z-index: 1;
+}
+*/
+.jumbotron{
+  margin: 0;
+  padding: 0;
+}

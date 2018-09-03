@@ -6,19 +6,18 @@ h1 {
 #main{
 	width: 100%;
 	height: 100%;
-
 }
 
 
 #main {position: absolute; top: 0; left: 0;
-text-align: center;}
+}
 .planet-view.ng-animate {
   transition: all ease 0.7s;
   position: absolute;
 }
  
 .planet-view.ng-enter {
-  top: 100%;
+  top: 250%;
   opacity: 1;
 }
  .planet-view{
@@ -36,3 +35,4 @@ text-align: center;}
 z-index: -1;
   opacity: 1;
 }
+
