@@ -1,26 +1,42 @@
 
+
+.jumbotron{
+	background-image:  url('../fondos/5.jpg');
+	width: 100%;
+	height: 100%; 
+	 background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.fondo{
+	width: 100%;
+	height: 100%; 
+	background-color: #6AA6FFA8;
+}
 .lenteja{
-	width: 500px;
-	background: black;
+	width: 600px;
+	padding: 10px;
+	margin-top: 100px;
+	overflow: visible;
 }
 
 h1 {
 	text-transform: uppercase;
 }
 
-ul {
+.lenteja > ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-ul li {
+.lenteja >  ul > li {
 	position: relative;
 	list-style: none;
-	margin: 2px;
+	margin: 5px;
 	width: 150px;
 	height: 155px;
-	background: url(https://d3hmvhl7ru3t12.cloudfront.net/img/hero-portrait-detailed/hero-portrait-detailed-bg-f2fded168cc47adb3996a3a9a015da500f0b74099df2f6a33735cce9dc99bd6fbbd4c9a5d225dd107fe9d88da61db05a8b455687c301e6545244753bc979b819.jpg);
+	background: black;
 	text-align: center;
 	text-transform: uppercase;
 	transform: scale3d(1,1,1) skewX(-10deg);
@@ -29,33 +45,88 @@ ul li {
 	transition: 300ms 10ms ease;
 }
 
-ul li:hover {
+.lenteja > ul > li:hover {
 	border-color: gold;
-	transform: scale3d(1.18,1.18,1) skewX(-10deg);
+	transform: scale3d(1.1,1.1,1) skewX(-10deg);
 	z-index: 1;
 }
 
 ul li img {
-	width: 120px;
+	width: 180px;
 	position: absolute;
-	bottom: -16px;
-	right: -8px;
+	bottom: -80px;
+	right: -20px;
 	transform: translateZ(0) skewX(10deg);
 }
 
 .hero-info {
 	position: absolute;
 	bottom: 0;
+	font-weight: 600;
+	color: #fff;
 	width: 100%;
-	background-color: rgb(244, 242, 247);
+
 }
 
-.hero-info p {
-	transform: translateZ(0) skewX(10deg);
+.hero-info > p {
 	font-style: oblique;
-	font-weight: 700i;
+	font-weight: 700;
+	    text-shadow: 2px 2px #CE3109;
+
+
 }
 
 #images {
   text-align: center;  
+}
+
+.selected{
+	height: 100vh;
+	position: absolute;
+	right: 10%;
+	opacity: 0;
+	bottom: 0;
+	
+}
+.imagen{
+	margin-top: 100px;
+	width: 500px;
+-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.añadir{
+	 -webkit-animation: animate 0.8s ; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+    animation: animate 0.8s forwards ;
+
+}
+.espera{
+		transition-delay: 0.8s;
+}
+.info{
+	margin-top: 100px;
+	margin-right:  50px;
+	float: left;
+	color: white;
+	width: 300px;
+}
+#info_usuario{
+	display: none;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animate {
+     from {right: -100%;
+    	opacity: 0}
+    to {right: : 0;
+    	opacity: 1}
+}
+
+@keyframes animate {
+   from {right: -100%;
+    	opacity: 0}
+    to {right: : 10%;
+    	opacity: 1}
 }

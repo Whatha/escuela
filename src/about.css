@@ -1,11 +1,9 @@
-
 .ızgara {
   /*  As of August 2012, only supported in Chrome 21+ */
   display: -webkit-flex;
   display: flex;
   height: 100%;
-    background: black;
-
+  background: #788B8DFF;
 }
 
 .kolon {
@@ -18,28 +16,27 @@
   overflow: hidden;
   transition: all .6s ease;
 }
+
 .kolon:nth-child(even) {
   background: #171717;
 }
+
 .kolon:hover {
   width: 100%;
-    transition-delay: 0.5s;
-
+  transition-delay: 0.5s;
 }
 
-.kolon p{
-  margin-top:  50%;
+.kolon p, .kolon li{
+  margin-top: 50%;
   opacity: 0;
-  transition: all .6s ease;
+  transition: all 1s ease;
   transition-delay: 0s;
 }
-
-.kolon:hover p {
+.kolon:hover p, .kolon:hover li {
   position: relative;
   margin-top: 1%;
-      opacity: 1;
+  opacity: 1;
   transition-delay: 0.7s;
-
 }
 
 .active {
@@ -49,32 +46,65 @@
 .inactive {
   opacity: 0.7;
 }
-.jumbotron{
+
+.jumbotron {
   padding: 0;
 }
 
-.coso{
+.coso {
 
-  width: 50%;
-  padding-top: 300px;
+  padding: 50px;
+    padding-top: 300px;
+
   margin: auto auto;
-
+  overflow: visible;
 }
 
-.coso:hover{
-    
-}
+.coso:hover {}
 
-.opac{
+.opac {
   width: 100%;
   height: 100%;
   color: #fff;
-    background: rgba(0, 0, 0, 0); /* Green background with 30% opacity */
+  background: rgba(255, 170, 0, .3);
+  /* Green background with 30% opacity */
   transition: all .6s ease;
-
 }
 
-.kolon:hover .opac{
-    background: rgba(0, 0, 0, 0.3); /* Green background with 30% opacity */
+.kolon:hover .opac {
+  background: rgba(255, 170, 0, 0.7);
+  /* Green background with 30% opacity */
+}
 
+.opac1 {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(0, 149, 251, .3);
+  /* Green background with 30% opacity */
+  transition: all .6s ease;
+}
+
+.kolon:hover .opac1 {
+  background: rgba(0, 149, 251, 0.7);
+  /* Green background with 30% opacity */
+}
+
+.opac2 {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(161, 59, 203, .3);
+  /* Green background with 30% opacity */
+  transition: all .6s ease;
+}
+
+.kolon:hover .opac2 {
+  background: rgba(161, 59, 203, 0.7);
+  /* Green background with 30% opacity */
+}
+.highlight{
+  font-size: 4vw;
+  transition: all 1s ease;
+  width: 200px;
 }
