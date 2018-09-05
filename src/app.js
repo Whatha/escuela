@@ -11,9 +11,14 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
             	templateUrl : 'pages/home.html',
             	controller  : 'mainController'
             })
- 			.when('/people', {
-            	templateUrl : 'pages/people.html',
+ 			.when('/members/2018-2', {
+            	templateUrl : 'pages/2018-2.html',
             	controller  : 'peopleController'
+            })
+
+            .when('/members/2018-1', {
+                templateUrl : 'pages/2018-1.html',
+                controller  : 'peopleController'
             })
             // route for the about page
             .when('/about', {
@@ -90,13 +95,5 @@ function getElement(event) {
     	$scope.message = 'Contact us! JK. This is just a demo.';
     });
 
-  $('.kolon').each(function() {
-        $(this).mouseover(function() {
-            $(this).addClass('active'); $('.ızgara').children('.kolon').not('.active').addClass('inactive');
-        });
-        $(this).mouseleave(function() {
-            $(this).removeClass('active');
-            $('.ızgara').children('.kolon').not('.active').removeClass('inactive');
-        });
-    });
+
 

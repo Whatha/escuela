@@ -36,7 +36,7 @@ h1 {
 	margin: 5px;
 	width: 150px;
 	height: 155px;
-	background: black;
+	background: #FAC69834;
 	text-align: center;
 	text-transform: uppercase;
 	transform: scale3d(1,1,1) skewX(-10deg);
@@ -54,7 +54,15 @@ h1 {
 ul li img {
 	width: 180px;
 	position: absolute;
-	bottom: -80px;
+	bottom: -10px;
+	right: -20px;
+	transform: translateZ(0) skewX(10deg);
+}
+
+.temp li img {
+	width: 180px;
+	position: absolute;
+	bottom: -30px;
 	right: -20px;
 	transform: translateZ(0) skewX(10deg);
 }
@@ -91,8 +99,6 @@ ul li img {
 .imagen{
 	margin-top: 100px;
 	width: 500px;
--webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 
 .añadir{
@@ -129,4 +135,13 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     	opacity: 0}
     to {right: : 10%;
     	opacity: 1}
+}
+
+.blanc{
+	width: 500px;
+	height: 10px;
+	background-color: white;
+	position: absolute;
+	float: right;
+	right: 0;
 }
