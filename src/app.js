@@ -1,4 +1,4 @@
-// script.js
+  // script.js
 
 var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
 
@@ -46,6 +46,7 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
     scotchApp.controller('mainController', function($scope) {
         // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
+        
     });
     scotchApp.controller('peopleController', function($scope) {
         // create a message to display in our view

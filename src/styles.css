@@ -24,13 +24,24 @@ margin: 0;
 
 .content {
     position: absolute;
-    bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     height: 100%;
     padding: 20px;
     left: 0;
+}
+.contenido{
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+    width: 500px;
+    right: 250%;
+  overflow: visible;
+  -webkit-animation: moveit 2s ; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation: moveit 2s forwards ;
+    animation-delay: 2s;
 }
 
 .hide{
@@ -52,8 +63,7 @@ margin: 0;
     animation-delay: 2s;
 }
 .logo{
-		margin-top: 200px;
-
+  bottom: 30%;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
@@ -67,8 +77,21 @@ margin: 0;
     to {left: 15%;
     	opacity: 1}
 }
+
+@-webkit-keyframes moveit {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes moveit {
+    from {right: -250%;
+      opacity: 0}
+    to {right : 15%;
+      opacity: 1}
+}
 .content p{
 	width: 500px;
+
 }
 
 
@@ -79,7 +102,6 @@ margin: 0;
   border: 2px solid #fff;
 	border-radius: 6px;
   padding: 10px;
-  	left: 15%;
 	margin-top: 50%;
 	opacity: 0;
   width: 300px;
@@ -87,6 +109,7 @@ margin: 0;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
+  float: left;
   box-shadow: inset 0 0 0 0 #0f363fAA;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
@@ -100,7 +123,7 @@ margin: 0;
 
 .up {
 	position: relative;
-	top: 50%;
+  margin-top: 50%;
     -webkit-animation: aa 2s ; /* Safari 4.0 - 8.0 */
     -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
     animation: aa 2s forwards ;
@@ -148,8 +171,6 @@ clip-path: polygon(75% 50%, 100% 0, 100% 100%, 50% 100%);
 
 
 .div-three {
-  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
-clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
   background: url('imagenes_estudiantes/5.jpg');
   width: 100vw;
   height: 100vh;
@@ -159,7 +180,6 @@ clip-path: polygon(0 0, 100% 0, 50% 100%, 50% 100%);
   background-repeat:no-repeat;
   background-size:cover;
   background-position:bottom;
-    cursor:pointer;
 
 }
 
@@ -180,6 +200,7 @@ clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
 
 }
 .nav>li>a{
+  font-size: 15px;
   color:white;
       transition: all .5s ease-in-out;
 
@@ -187,11 +208,330 @@ clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
 .nav>li>a:hover{
     text-decoration: none; 
      background-color: transparent; 
-     color: black;
+     color: #46A1DAFF;
 }
 
 .nav>li>a:focus {
    text-decoration: none; 
      background-color: transparent; 
-     color: red;
+     color: #58A5E2FF;
 }
+
+.inscribete{
+  background-color: #FF3D4FFF;
+}
+
+.inscribete:hover{
+  background-color: black;
+}
+
+.send{
+    background: transparent;
+  color:black;
+  border-radius: 5px;
+  border: 3px solid white;
+      transition: all .5s ease-in-out;
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  bottom: 20%;
+
+}
+
+ .left{
+left: 20%;
+}
+
+ .right{
+right: 20%;
+}
+a .send  h1{
+  color: white;
+  font-size: 30px;
+}
+
+a:hover .send {
+  text-decoration: none;
+}
+
+a:focus .send {
+  text-decoration: none;
+}
+.send:hover{
+  background: #FFAD34FF;
+color: white;
+    cursor: pointer;
+
+}
+
+
+
+.jumbotron{
+   background: url('../imagenes_estudiantes/6.jpg');
+  width: 100%;
+  height: 100%; 
+   background-size: 100%;
+background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+}
+.ggg{
+   background: url('../imagenes_estudiantes/2018-1.jpg');
+  width: 100%;
+  height: 100%; 
+   background-size: 100%;
+background-repeat:no-repeat;
+  background-size:cover;
+  background-position:top;
+}
+
+
+.fondo{
+  width: 100%;
+  height: 100%; 
+  background-color: #6AA6FFA8;
+}
+.lenteja{
+  width: 600px;
+  padding: 10px;
+  margin-top: 100px;
+  overflow: visible;
+}
+
+
+.lenteja > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lenteja >  ul > li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+  width: 150px;
+  height: 155px;
+  background: #FAC69834;
+  text-align: center;
+  text-transform: uppercase;
+  transform: scale3d(1,1,1) skewX(-10deg);
+  overflow: hidden;
+  filter: drop-shadow(0 1px 4px rgba(10,2,12,0.2));
+  transition: 300ms 10ms ease;
+}
+.lenteja ul li h1{
+    text-transform: uppercase;
+
+}
+.lenteja > ul > li:hover {
+  transform: scale3d(1.1,1.1,1) skewX(-10deg);
+  z-index: 1;
+    border: 2px solid #FFB944FF;
+
+}
+
+ul li img {
+  width: 180px;
+  position: absolute;
+  bottom: -10px;
+  right: -20px;
+  transform: translateZ(0) skewX(10deg);
+}
+
+.temp li img {
+  width: 180px;
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  transform: translateZ(0) skewX(10deg);
+}
+
+.hero-info {
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  color: #fff;
+  width: 100%;
+  
+}
+
+.hero-info > p {
+  font-style: oblique;
+  font-weight: 700;
+      text-shadow: 2px 2px #CE3109; 
+}
+
+#images {
+  text-align: center;  
+}
+
+.selected{
+  height: 100vh;
+  position: absolute;
+  right: 10%;
+  opacity: 0;
+  bottom: 0;
+  
+}
+.imagen{
+  margin-top: 100px;
+  width: 500px;
+}
+
+.añadir{
+   -webkit-animation: animate 0.8s ; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+    animation: animate 0.8s forwards ;
+
+}
+.espera{
+    transition-delay: 0.8s;
+}
+.info{
+  margin-top: 100px;
+  margin-right:  50px;
+  float: left;
+  color: white;
+  width: 300px;
+}
+#info_usuario{
+  display: none;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes animate {
+     from {right: -100%;
+      opacity: 0}
+    to {right: 0;
+      opacity: 1}
+}
+
+@keyframes animate {
+   from {right: -100%;
+      opacity: 0}
+    to {right : 10%;
+      opacity: 1}
+}
+
+.blanc{
+  width: 500px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  float: right;
+  right: 0;
+}
+
+.ızgara {
+  /*  As of August 2012, only supported in Chrome 21+ */
+  display: -webkit-flex;
+  display: flex;
+  height: 100%;
+  background: #788B8DFF;
+}
+
+.kolon {
+
+  background: #171717;
+  width: 35%;
+  /* border: 10px solid #fff; */
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  transition: all .6s ease;
+}
+
+.kolon:nth-child(even) {
+  background: #171717;
+}
+
+.kolon:hover {
+  width: 100%;
+  transition-delay: 0.5s;
+}
+
+.kolon p, .kolon li{
+  margin-top: 50%;
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: 0s;
+    font-size: 1.5vw;
+
+}
+.kolon:hover p, .kolon:hover li {
+  position: relative;
+  margin-top: 1%;
+  opacity: 1;
+  transition-delay: 0.7s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.inactive {
+  opacity: 0.7;
+}
+
+.jumbotron {
+  padding: 0;
+}
+
+.coso {
+
+  padding: 50px;
+    padding-top: 300px;
+
+  margin: auto auto;
+  overflow: visible;
+}
+
+.coso:hover {}
+
+.opac {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(255, 170, 0, .3);
+  /* Green background with 30% opacity */
+  transition: all .6s ease;
+}
+
+.kolon:hover .opac {
+  background: rgba(255, 170, 0, 0.7);
+  /* Green background with 30% opacity */
+}
+
+.opac1 {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(0, 149, 251, .3);
+  /* Green background with 30% opacity */
+  transition: all .6s ease;
+}
+
+.kolon:hover .opac1 {
+  background: rgba(0, 149, 251, 0.7);
+  /* Green background with 30% opacity */
+}
+
+.opac2 {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(161, 59, 203, .3);
+  /* Green background with 30% opacity */
+  transition: all .6s ease;
+}
+
+.kolon:hover .opac2 {
+  background: rgba(161, 59, 203, 0.7);
+  /* Green background with 30% opacity */
+}
+.highlight{
+  font-size: 4vw;
+  transition: all 1s ease;
+}
+
