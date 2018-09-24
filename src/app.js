@@ -59,7 +59,6 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
             console.log('hoverIn ' + el.attr('src'));
                     $scope.imagen = el.attr('src');
                     $scope.nombre=el.attr('nombre');
-                    $scope.edad=el.attr('edad');
                     $scope.carrera=el.attr('carrera');
                     $scope.universidad=el.attr('universidad');
                     $scope.hobbies=el.attr('hobbies');
@@ -98,3 +97,6 @@ function getElement(event) {
 
 
 
+$(document).on('ready', function() {
+     console.log("READY SHIT");
+    });
