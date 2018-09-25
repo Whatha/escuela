@@ -36,7 +36,7 @@
 .contenido {
   position: absolute;
   bottom: 0;
-  height: 400px;
+  height: 450px;
   width: 500px;
   right: 250%;
   overflow: visible;
@@ -408,14 +408,16 @@ ul li img {
 .selected {
   height: 100vh;
   position: absolute;
-  right: 10%;
+  width: 33%;
+  right: 0;
   opacity: 0;
   bottom: 0;
 }
 
 .imagen {
   margin-top: 100px;
-  width: 500px;
+  max-width: 100%;
+  max-height: 400px;
 }
 
 .añadir {
@@ -431,13 +433,23 @@ ul li img {
 }
 
 .info {
-  margin-top: 100px;
-  margin-right: 50px;
-  float: left;
-  color: white;
-  width: 300px;
+     margin-top: 10px;
+    margin-right: 50px;
+    float: left;
+    color: white;
+    width: 300px;
+}
+.info h3{
+  color: #f0ad4e;
+  font-size: 20px;
+  margin-top: 5px;
 }
 
+.info h2{
+  color: white;
+  font-size: 26px;
+  margin-top: 0;
+}
 #info_usuario {
   display: none;
 }
@@ -464,13 +476,13 @@ ul li img {
     opacity: 0
   }
   to {
-    right: 10%;
+    right: 0;
     opacity: 1
   }
 }
 
 .blanc {
-  width: 500px;
+  width: 100%;
   height: 10px;
   background-color: white;
   position: absolute;
@@ -966,3 +978,41 @@ color: #FF3D4FFF;
   background: transparent;
   border-color: transparent;
 }
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover{
+  text-decoration: none;
+  color: #FF3D4FFF;
+    transition: color .3s;
+
+}
+.social {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: Entypo;
+  font-size: 35px;
+  text-align: center;
+  overflow: hidden;
+}
+
+

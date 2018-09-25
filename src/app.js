@@ -11,6 +11,10 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
             	templateUrl : 'pages/home.html',
             	controller  : 'mainController'
             })
+            .when('/test', {
+                templateUrl : 'pages/test.html',
+                controller  : 'mainController'
+            })
  			.when('/members/2018-2', {
             	templateUrl : 'pages/2018-2.html',
             	controller  : 'peopleController'
