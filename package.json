@@ -23,6 +23,7 @@
     "angular": "^1.7.3",
     "angular-animate": "^1.7.3",
     "angular-scroll-events": "0.0.3",
+    "angularfire2": "^5.0.0-rc.4",
     "core-js": "^2.5.4",
     "is": "^3.2.1",
     "ng-cli": "^0.7.0",
