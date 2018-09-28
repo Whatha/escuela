@@ -201,7 +201,7 @@
   clip-path: polygon(75% 50%, 100% 0, 100% 100%, 50% 100%);
   width: 100vw;
   height: 100vh;
-  background: url('imagenes_estudiantes/2018-1.jpg');
+  background: url('/assets/imagenes_estudiantes/2018-1.jpg');
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@
 
 
 .div-three {
-  background: url('imagenes_estudiantes/carvafondo.jpg');
+  background: url('/assets/imagenes_estudiantes/carvafondo.jpg');
   width: 100vw;
   height: 100vh;
 
@@ -227,7 +227,7 @@
 .div-two {
   -webkit-clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
   clip-path: polygon(0 0, 25% 50%, 50% 100%, 0% 100%);
-  background: url('imagenes_estudiantes/6.jpg');
+  background: url('/assets/imagenes_estudiantes/6.jpg');
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -259,7 +259,7 @@
 }
 
 .inscribete {
-  background-color: #FF3D4FFF;
+  background-color: #4D6391;
 }
 
 .inscribete:hover {
@@ -267,7 +267,7 @@
 }
 
 .send {
-            background: #FF3D4FFF;
+            background: #4D6391;
   color: black;
   border-radius: 5px;
   border: 3px solid white;
@@ -308,7 +308,7 @@ a:focus .send {
 
 
 .jumbotron {
-  background: url('../imagenes_estudiantes/6.jpg');
+  background: url('/assets/imagenes_estudiantes/6.jpg');
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -318,7 +318,7 @@ a:focus .send {
 }
 
 .ggg {
-  background: url('../imagenes_estudiantes/2018-1.jpg');
+  background: url('/assets/imagenes_estudiantes/2018-1.jpg');
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -392,7 +392,7 @@ ul li img {
 .hero-info {
   position: absolute;
   bottom: 0;
-  color: #FF3D4FFF;
+  color: #4D6391;
   width: 100%;
   background: #fff;
 }
@@ -413,7 +413,9 @@ ul li img {
   opacity: 0;
   bottom: 0;
 }
-
+video{
+  top: 0;
+}
 .imagen {
   margin-top: 100px;
   max-width: 100%;
@@ -744,7 +746,7 @@ ul li img {
 #contact {
   width: 100%;
   height: 100vh;
-  background: url('../fondos/4.jpg');
+  background: url('assets/fondos/4.jpg');
   overflow: hidden;
   background-repeat:no-repeat;
   background-size:cover;
@@ -756,6 +758,12 @@ ul li img {
   width: 600px;
   color: white;
 }
+#contact form select option{
+  color: white;
+  background: #4D6391;
+
+}
+
 #contact form select{
   width: 49.5%;
   background-color: transparent;
@@ -778,7 +786,7 @@ padding: 5px;
 }
 
 #contact form .send{
-    background: #FF3D4FFF;
+    background: #4D6391;
   color:white;
   border: 0 solid transparent;
       transition: all .5s ease-in-out;
@@ -789,17 +797,21 @@ padding: 5px;
 
 #contact form .send:hover{
   background: white;
-color: #FF3D4FFF;
+color: #4D6391;
 
 }
 
 .cosa{
   width: 600px;
-  height: 700px;
+
   position: absolute;
  left: 50px;
- bottom: 0;
+ bottom:75px;
 
+}
+
+.cosa h1{
+  font-size: 40px;
 }
 
 
@@ -951,7 +963,7 @@ color: #FF3D4FFF;
 
 .navbar-inverse .navbar-nav>li>a:hover,
 .navbar-inverse .navbar-nav>li>a:focus {
-  color: #FF3D4FFF;
+  color: #4D6391;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -966,7 +978,7 @@ color: #FF3D4FFF;
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
-  background-color: #FF3D4FFF;
+  background-color: #4D6391;
 }
 
 .navbar {
@@ -999,7 +1011,7 @@ footer{
 }
 .footer a:hover{
   text-decoration: none;
-  color: #FF3D4FFF;
+  color: #4D6391;
     transition: color .3s;
 
 }

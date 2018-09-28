@@ -8,40 +8,40 @@ var scotchApp = angular.module('scotchApp', ['ngRoute', 'ngAnimate']);
 
             // route for the home page
             .when('/', {
-            	templateUrl : 'pages/home.html',
+            	templateUrl : 'assets/pages/home.html',
             	controller  : 'mainController'
             })
             .when('/test', {
-                templateUrl : 'pages/test.html',
+                templateUrl : 'assets/pages/test.html',
                 controller  : 'mainController'
             })
  			.when('/members/2018-2', {
-            	templateUrl : 'pages/2018-2.html',
+            	templateUrl : 'assets/pages/2018-2.html',
             	controller  : 'peopleController'
             })
 
             .when('/members/2018-1', {
-                templateUrl : 'pages/2018-1.html',
+                templateUrl : 'assets/pages/2018-1.html',
                 controller  : 'peopleController'
             })
             // route for the about page
             .when('/about', {
-            	templateUrl : 'pages/about.html',
+            	templateUrl : 'assets/pages/about.html',
             	controller  : 'aboutController'
             })
             .when('/home', {
-            	templateUrl : 'pages/home.html',
+            	templateUrl : 'assets/pages/home.html',
             	controller  : 'mainController'
             })
 
             // route for the contact page
             .when('/contact', {
-            	templateUrl : 'pages/contact.html',
+            	templateUrl : 'assets/pages/contact.html',
             	controller  : 'contactController'
             })
 
             .when('/members', {
-            	templateUrl : 'pages/members.html',
+            	templateUrl : 'assets/pages/members.html',
             	controller  : 'contactController'
             });
         });
